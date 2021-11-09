@@ -69,7 +69,7 @@ API from inside async code. Each function takes an *operation* closure,
 which is expected to call into the callback-based API. The closure
 receives a continuation instance that must be resumed by the callback,
 either to provide the result value or (in the throwing variant) the thrown
-error that becomes the result of the `withUnsafeContinuation` call when the
+error that becomes the result of the `withUnsafeThrowingContinuation` call when the
 async task resumes:
 
 
